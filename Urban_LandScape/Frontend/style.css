@@ -104,7 +104,6 @@ h1, h3, p {
     margin: 3rem 0;
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 2rem;
     flex-wrap: wrap;
 }
@@ -116,6 +115,11 @@ h1, h3, p {
     margin-bottom: 5rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
     place-content: center;
+    transition: 0.5s;
+}
+.card a{
+    text-decoration: none;
+    color: black;
 }
 .card_info{
     text-align: center;
@@ -125,6 +129,7 @@ h1, h3, p {
     color: #FAF6E9;
     font-size: 3.5rem;
     filter: drop-shadow(2px 5px 0px rgba(0, 0, 0, 0.25));
+    padding-top: 3rem;
     
 }
 .card_info h3{
@@ -134,11 +139,26 @@ h1, h3, p {
     padding-top: 1.5rem;
     padding-bottom: 10px;
 }
+.card_info p{
+    padding-bottom: 3rem;
+}
 .card_info span{
     visibility: hidden;
 }
 .card:hover{
     cursor: pointer;
+    transform: translateY(-20px);
+}
+.card:hover .card_info i {
+    color: #E37090;
+    transition: 0.5s;
+}
+
+.card:hover .card_info span {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+
 }
 .home_service_sec{
     margin: 5rem 0  ;
@@ -247,6 +267,87 @@ h1, h3, p {
     background-color: #959E4E;
     padding: 0.6rem 3rem;
 }
+.home_aboutus_info_container img{
+    height: 100px;
+}
+
+/*home projects section*/
+.home_project_section{
+    display: flex;
+    justify-content: center;
+}
+.home_project_container{
+    background-color: #FAF6E9;
+}
+.home_project_container h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-top: 5rem;  
+}
+.project_wrapper{
+    margin-top: -5rem;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project_img{
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+.slide{
+    width: 100px;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    margin: 0 10px;
+    align-items: flex-end;
+    transition: 0.6s cubic-bezier(0.28. -0.03, 0, .99);
+    transition: all .5s ease;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.project_img input{
+    display: none;
+}
+.project_img input:checked + label{
+    width: 500px;
+}
+.slide[for="c1"]{
+    background-image: url(Images/Projects/prio\ \(4\).jpg);
+}
+.slide[for="c2"]{
+    background-image: url(Images/Projects/prio\ \(10\).jpg);
+}
+.slide[for="c3"]{
+    background-image: url(Images/Projects/prio\ \(1\).jpg);
+}
+.slide[for="c4"]{
+    background-image: url(Images/Projects/prio\ \(9\).jpg);
+}
+.slide[for="c5"]{
+    background-image: url(Images/Projects/prio\ \(7\).jpg);
+}
+.project_btn_container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+.project_btn_container a{
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    background-color: #959E4E;
+    padding: 0.6rem 3rem;
+}
+.project_btn_container a:hover{
+    background-color: #E37090;
+}
+
+
 /*home contact us section*/
 .home_contact_sec{
     height: 120vh;
@@ -257,8 +358,8 @@ h1, h3, p {
     justify-content: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.09) 0px -2px 1px, rgba(0, 0, 0, 0.09) 0px -4px 2px, rgba(0, 0, 0, 0.09) 0px -8px 4px, rgba(0, 0, 0, 0.09) 0px -16px 8px, rgba(0, 0, 0, 0.09) 0px -32px 16px;
-
 }
+
 .home_contact_container h1{
     padding-bottom: 3rem;
     font-size: 2.5rem;
@@ -441,9 +542,6 @@ footer img{
 }
 
 
-
-
-
 /* Our Project Page*/
 .project_header_container{
     height: 60vh;
@@ -490,6 +588,13 @@ footer img{
     flex-wrap: wrap;
     margin: 3rem 3rem;
 }
+.project_card{
+    transition: 0.3s;
+}
+.project_card:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
 .project_card img{
     width: 375px;
     height: 375px;
@@ -510,13 +615,56 @@ footer img{
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .stats{
-    height: 40vh;
-    background-image: linear-gradient(rgba(47, 52, 23, 0.5)), url(Images/Projects/done\ project\ \(12\).jpg);
+    height: 35vh;
+    background-image: linear-gradient(rgba(47, 52, 23, 0.8)), url(Images/Projects/done\ project\ \(12\).jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.09) 0px -2px 1px, rgba(0, 0, 0, 0.09) 0px -4px 2px, rgba(0, 0, 0, 0.09) 0px -8px 4px, rgba(0, 0, 0, 0.09) 0px -16px 8px, rgba(0, 0, 0, 0.09) 0px -32px 16px;
 }
+.stats_container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    gap: 7rem;
+}
+.stats_container h1{
+    font-size: 3.5rem; 
+}
+.our_team_sec{
+    margin-top: 5rem;
+
+}
+.our_team_sec h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.member_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 20px;
+}
+.member_card img{
+    width: 300px;
+    object-fit: cover;
+    height: 500px;
+}
+.faq_sec{
+    margin-top: 5rem;
+}
+.faq_sec h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+
 
 /* Contacts Page*/
 .contact_header_container{
