@@ -663,8 +663,33 @@ footer img{
     font-weight: 500;
     margin-bottom: 3rem;
 }
+.faq_container{
+    margin: 0 auto;
+    max-width: 80%;
+}
+.faq_card{
+    cursor: pointer;
+    width: 100%;
+    background-color: #D1BE8A;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.faq_card i{
+    padding-top: 3px;
+}
+.faq_card h3{
+    font-weight: 600;
+}
+.faq_pannel{
+    
+}
 
 
+ 
 
 /* Contacts Page*/
 .contact_header_container{
