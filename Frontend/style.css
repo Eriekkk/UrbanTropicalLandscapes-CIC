@@ -196,23 +196,34 @@ h1, h3, p {
 
 /*how we work section*/
 .how_we_work{
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
 }
 .how_we_work_container{
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 .how_we_work_left{
+     width: 50%;
+    background-color: #FAF6E9;
+    height: 100%;
+    padding: 3rem 2rem;
     display: flex;
-    padding: 0 5rem;
     align-items: center;
-     background-color: #FAF6E9;
-     box-shadow: rgba(0, 0, 0, 0.24) 0px -10px 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: 2rem;
 }
+
 .left_info{
-    width: 70%;
+    width: 80%;
 }
 .left_info h1{
     font-size: 2.5rem;
@@ -235,34 +246,47 @@ h1, h3, p {
 }
 
 .how_we_work_right{
+    margin-top: 2rem;
     display: flex;
-    margin-left: -5rem;
+    margin-left: -8rem;
     align-items: center;
+    z-index: 1;
 }
 .how_we_work_right img{
-    height: 450px;
-    width: 700px;
+    height: 500px;
     object-fit: cover;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .aboutus{
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
 }
 .aboutus_container{
+    width: 80%;
+    margin: 0 auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 .aboutus_right{
-    display: flex;
-    padding: 0 12rem;
-    align-items: center;
+    width: 60%;
     background-color: #FAF6E9;
-    width: 50%;
+    height: 100%;
+    padding: 0 2rem;
+    padding-left: 8rem;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: 2rem;
 }
 .right_info{
-    width: 90%;
+    width: 100%;
 }
 .right_info h1{
     font-size: 2.5rem;
@@ -280,17 +304,18 @@ h1, h3, p {
     background-color: #959E4E;
     padding: 0.7rem 3rem;
 }
+.right_info a:hover{
+    background-color: #E37090;
+}
 .aboutus_left{
     display: flex;
     margin-right: -5rem;
     align-items: center;
     z-index: 1;
-    
 
 }
 .aboutus_left img{
-    height: 450px;
-    width: 700px;
+    height: 500px;
     object-fit: cover;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -307,13 +332,13 @@ h1, h3, p {
     justify-content: center;
 }
 .home_project_container{
-    background-color: #FAF6E9;
+
 }
 .home_project_container h1{
     text-align: center;
     font-size: 2.5rem;
     font-weight: 500;
-    padding-top: 5rem;  
+    padding-top: 10rem;  
 }
 .project_wrapper{
     margin-top: -5rem;
@@ -324,7 +349,7 @@ h1, h3, p {
     justify-content: center;
 }
 .project_img{
-    height: 400px;
+    height: 500px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: start;
@@ -344,7 +369,7 @@ h1, h3, p {
     display: none;
 }
 .project_img input:checked + label{
-    width: 500px;
+    width: 600px;
 }
 .slide[for="c1"]{
     background-image: url(Images/Projects/prio\ \(4\).jpg);
