@@ -591,12 +591,13 @@ footer img {
     gap: 1rem;
 }
 
-.footer_row i {
+.footer_row a {
     padding-right: 0.5rem;
     font-size: 25px;
+    color: white;
 }
 
-.footer_row i:hover {
+.footer_row a:hover {
     cursor: pointer;
     color: #E37090;
     transition: 0.3s ease;
