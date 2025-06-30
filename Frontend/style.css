@@ -1429,7 +1429,7 @@ footer img {
     cursor: pointer;
     background-color: #E37090;
 }
-@media (max-width: 1024px) {    
+@media (max-width: 1024px) {    /*TABLET QUERY*/
 
 .nav ul {
         position: absolute;
