@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urban Tropical Landscapes</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="x-icon" href="Images/iconlogo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
     <!-- SEO TAGLINES-->
     <!--SEO URL-->
@@ -44,11 +48,6 @@
     <meta property="og:url" content="https://www.youtube.com/channel/UCkNzqCszyZwcDrdeK4PEoWw">
     <meta property="og:site_name" content="Urban Tropical Landacape LLC">
 
-
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="x-icon" href="Images/iconlogo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
 
 <body>
@@ -57,7 +56,10 @@
             <a href="index.html" class="logo">
                 <img src="Images/logo.PNG">
             </a>
-            <ul>
+            <label for="menu_toggle" class="menu_btn ">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul id="menu_list">
                 <li><a href="service.html">SERVICES</a></li>
                 <li><a href="project.html">PROJECTS</a></li>
                 <li><a href="about.html">ABOUT</a></li>
@@ -67,6 +69,7 @@
         <div class="header_container">
             <img class="header_logo" src="Images/logoheader.PNG">
         </div>
+         <script src="navbar.js"></script>
     </header>
 
     <section class="home_service_sec">
