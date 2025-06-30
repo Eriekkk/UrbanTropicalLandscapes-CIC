@@ -57,7 +57,7 @@ p {
 }
 
 .nav li a:focus,
-.nav li a:hover {
+nav li a:hover {
     transition-duration: 500ms;
     color: #E37090;
 }
@@ -87,13 +87,6 @@ p {
     padding-top: 5px;
 }
 
-.menu_btn{
-    display: none;
-    color: white;
-    font-size: 1.5rem;
-    margin: 2rem;
-    filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.25));
-}
 .logo {
     padding: 0.2rem 2rem;
 }
@@ -240,7 +233,7 @@ p {
 }
 
 .how_we_work_container {
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -249,7 +242,7 @@ p {
 }
 
 .how_we_work_left {
-    width: 40%;
+    width: 50%;
     background-color: #FAF6E9;
     height: 100%;
     padding: 3rem 2rem;
@@ -289,14 +282,14 @@ p {
 .how_we_work_right {
     margin-top: 2rem;
     display: flex;
-    margin-left: -5rem;
+    margin-left: -8rem;
     align-items: center;
     z-index: 1;
 }
 
 .how_we_work_right img {
     width: 100%;
-    height: 400px;
+    height: 500px;
     object-fit: cover;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -390,7 +383,6 @@ p {
     font-size: 2.5rem;
     font-weight: 500;
     padding-top: 10rem;
-    padding-bottom: 2rem;
 }
 
 .project_wrapper {
@@ -1429,73 +1421,23 @@ footer img {
     cursor: pointer;
     background-color: #E37090;
 }
+<<<<<<< HEAD
 @media (max-width: 1024px) {    /*TABLET QUERY*/
+=======
+@media (max-width: 1024px) {
+    .nav li a {
+        margin: 0 1.5rem;
+    }
+>>>>>>> parent of 49e198f (navar update)
 
-.nav ul {
-        position: absolute;
-        top: 40px; 
-        left: 0;
-        right: 0;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        background-color: #959E4E;
-        gap: 0;
-        overflow: hidden;
-        max-height: 0;
-        transition: max-height 0.3s ease-out;
+    .nav ul {
+        padding: 0 0.5rem;
     }
-    
-    .nav ul.show {
-        max-height: 500px; /* adjust based on your content */
-    }
-    
-    .nav ul li {
-        margin: 30px 2rem;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    }
-    
-    .nav ul.show li {
-        opacity: 1;
-    }
-    
-    .nav ul li a {
-        font-size: 1.2rem;
-        display: block;
-    }
-    
-    .nav li a:focus,
-    .nav li a:hover {
-        transition-duration: 500ms;
-        color: #E37090;
-    }
-    
-    .nav li a:focus:after {
-        display: none;
-    }
-    
-    .nav li a:after {
-        display: none;
-    }
-    
-    .menu_btn {
-        display: block;
-        cursor: pointer;
-    }
-    
-    #menu_toggle:checked ~ #menu_list {
-        max-height: 500px;
-    }
-    
-    #menu_toggle:checked ~ #menu_list li {
-        opacity: 1;
-    }
-    
+
     .header_container {
         height: 70vh;
     }
-    
+
     .header_logo {
         height: 18rem;
     }
@@ -1504,7 +1446,7 @@ footer img {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center; /* ✅ Add this line */
         flex-wrap: nowrap;
         gap: 0rem;
 
