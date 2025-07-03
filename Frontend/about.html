@@ -54,15 +54,19 @@
 
 <body>
     <header>
-        <navbar class="nav">
+         <navbar class="nav">
             <a href="index.html" class="logo">
                 <img src="Images/logo.PNG">
             </a>
-            <ul>
+            <label for="menu_toggle" class="menu_btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" id="menu_toggle" style="display:none;">
+            <ul id="menu_list">
                 <li><a href="service.html">SERVICES</a></li>
                 <li><a href="project.html">PROJECTS</a></li>
-                <li><a href="about.html" class="active">ABOUT</a></li>
-                <LI><a href="contact.html">CONTACTS</a></LI>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACTS</a></li>
             </ul>
         </navbar>
         <div class="about_header_container">
@@ -73,7 +77,8 @@
         <div class="about_company_sec">
             <div class="about_company_container">
                 <div class="about_company_left">
-                    <h1>ABOUT THE COMPANY</h1>
+                    <div class="about_left_info">
+                        <h1>ABOUT THE COMPANY</h1>
                     <p>Urban Tropical Landscape is a team of passionate designers and artists from the Philippines,
                         specializing in creating evolving landscapes that blend beauty and functionality. Established in
                         2007 and rebranded in the UAE in 2017, we bring over 17 years of expertise in crafting exclusive
@@ -82,6 +87,7 @@
                         transform
                         urban spaces of all sizes into lush, breathtaking paradises. Create the perfect blend of nature
                         and design with us!</p>
+                    </div>
                 </div>
                 <div class="about_company_right">
                     <img src="Images/aboutusimg.jpg">
@@ -284,7 +290,7 @@
         </div>
 
     </footer>
-
+<script src="navbar.js"></script>
 </body>
 
 </html>

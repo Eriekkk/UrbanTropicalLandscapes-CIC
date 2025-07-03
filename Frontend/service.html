@@ -58,11 +58,15 @@
             <a href="index.html" class="logo">
                 <img src="Images/logo.PNG">
             </a>
-            <ul>
-                <li><a href="service.html" class="active">SERVICES</a></li>
+            <label for="menu_toggle" class="menu_btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" id="menu_toggle" style="display:none;">
+            <ul id="menu_list">
+                <li><a href="service.html">SERVICES</a></li>
                 <li><a href="project.html">PROJECTS</a></li>
                 <li><a href="about.html">ABOUT</a></li>
-                <LI><a href="contact.html">CONTACTS</a></LI>
+                <li><a href="contact.html">CONTACTS</a></li>
             </ul>
         </navbar>
         <div class="service_header_container">
@@ -291,7 +295,7 @@
         </div>
 
     </footer>
-
+<script src="navbar.js"></script>
 </body>
 
 </html>
