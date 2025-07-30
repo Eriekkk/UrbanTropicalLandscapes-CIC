@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: 1px solid red;
+    border: 1px solid red;
 }
 body {
     font-family: Arial, sans-serif;
@@ -1435,7 +1435,7 @@ footer img {
     cursor: pointer;
     background-color: #E37090;
 }
-@media (max-width: 1024px) { 
+@media (max-width: 768px) { 
      .nav ul {
         position: absolute;
         top: 3.5rem; 
@@ -1624,27 +1624,12 @@ footer img {
         margin-top: 2rem;
     }
 
-
-
-
-
-
-
-
-
-
-
-    
      .contact_us_container {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
     }
 
-
-
-
-    
     .contact_info_row {
         display: flex;
         flex-wrap: wrap;
@@ -2028,10 +2013,24 @@ footer img {
     .footer_col3 a {
         font-size: 1rem;
     }
-
+ 
     footer img {
         height: 120px;
         margin: 0 auto;
+    }
+
+    /*services*/
+    
+    .design {
+        height: 50vh;
+        width: 100%;
+        margin: 1rem 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .design_container {
+        width: 80%;
     }
 }
 
